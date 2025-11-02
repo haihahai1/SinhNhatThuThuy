@@ -2,11 +2,11 @@
 const terminalContent = document.getElementById('terminal-content');
 
 // --- TÙY CHỈNH LỜI CHÚC CỦA BẠN TẠI ĐÂY ---
-const friendName = "Nguyễn Ngọc Anh nè"; // <-- THAY TÊN BẠN BÈ
-const age = 19; // <-- THAY SỐ TUỔI (hoặc để trống)
+const friendName = "Thu Thủy"; // <-- THAY TÊN BẠN BÈ
+const age = 18; // <-- THAY SỐ TUỔI (hoặc để trống)
 
 const lines = [
-    { text: "Khởi chạy quy trình: 'Happy_Birthday_Protocol'...", type: 'system' },
+    { text: "Khởi chạy quy trình: 'Happy_Birthday'...", type: 'system' },
     { text: `Target: ${friendName}`, type: 'system' },
     { text: "Đang tải dữ liệu... 10%...", delay: 150 },
     { text: "Đang tải dữ liệu... 30%...", delay: 100 },
@@ -21,11 +21,11 @@ const lines = [
     { text: "--------------------------------------------------", type: 'ascii' },
     { text: `Chúc mừng sinh nhật lần thứ ${age}, ${friendName}! 🎂`, type: 'user' },
     { text: "", delay: 200 },
-    { text: "Anh chúc Thu bước sang tuổi mới sẽ luôn khỏe mạnh, xinh đẹp, và hạnh phúc thật nhiều nhé!", type: 'user' },
-    { text: "   - (feature) Chúc em luôn tự tin, nhiệt huyết để chinh phục mọi ước mơ và mục tiêu trong cuộc sống", type: 'user' },
-    { text: "   - (feature) Hãy cứ sống hết mình, làm điều em thích nhaa", type: 'user' },
-    { text: "   - (fix) Loại bỏ 100% bugs 'buồn bã'.", type: 'user' },
-    { text: "   - (refactor) Và Sớm kiếm được ny nhá=))", type: 'user' },
+    { text: "Anh chúc Thu bước sang tuổi mới sẽ luôn khỏe mạnh, xinh đẹp, và hạnh phúc thật nhiều nhéee", type: 'user' },
+    { text: "   -  Chúc em luôn tự tin, nhiệt huyết để chinh phục mọi ước mơ và mục tiêu trong cuộc sống", type: 'user' },
+    { text: "   -  Hãy cứ sống hết mình, làm điều em thích nhaa", type: 'user' },
+    { text: "   -  Loại bỏ 100% bugs 'buồn bã'.", type: 'user' },
+    { text: "   -  Và Sớm kiếm được ny nhá=))", type: 'user' },
     { text: "", delay: 200 },
     { text: "Happy happy và happy birthday!", type: 'user' },
     { text: "From: [MinhHai]", type: 'user' }, // <-- THAY TÊN CỦA BẠN
