@@ -1,0 +1,84 @@
+/* Giao diện nền đen chữ trắng "hacker" */
+body {
+    background-color: #1a1a1a;
+    color: #f0f0f0;
+    font-family: 'Courier New', Courier, monospace;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Khung cửa sổ terminal */
+.terminal-window {
+    width: 100%;
+    max-width: 700px;
+    background-color: #0d1117; /* Màu nền GitHub Dark Mode */
+    border: 1px solid #30363d;
+    border-radius: 8px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+    overflow: hidden;
+}
+
+.terminal-header {
+    background-color: #30363d;
+    padding: 8px 12px;
+    display: flex;
+    align-items: center;
+}
+
+.buttons {
+    display: flex;
+}
+
+.dot {
+    height: 12px;
+    width: 12px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 6px;
+}
+.red { background-color: #ff5f56; }
+.yellow { background-color: #ffbd2e; }
+.green { background-color: #27c93f; }
+
+.title {
+    color: #c9d1d9;
+    font-size: 0.9rem;
+    margin-left: 20px;
+    flex-grow: 1;
+    text-align: center;
+}
+
+.terminal-body {
+    padding: 20px;
+    height: 400px;
+    overflow-y: auto;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+/* Nội dung terminal, pre để giữ nguyên định dạng */
+#terminal-content {
+    margin: 0;
+    white-space: pre-wrap; /* Tự động xuống hàng */
+    word-wrap: break-word; /* Bẻ gãy từ nếu quá dài */
+}
+
+/* Con trỏ nhấp nháy */
+.cursor {
+    display: inline-block;
+    background-color: #f0f0f0;
+    width: 10px;
+    height: 1.2rem; /* Chiều cao bằng chữ */
+    margin-left: 2px;
+    animation: blink 1s step-end infinite;
+}
+
+@keyframes blink {
+    from, to { background-color: transparent; }
+    50% { background-color: #f0f0f0; }
+}
